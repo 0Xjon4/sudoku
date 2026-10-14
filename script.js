@@ -1,3 +1,4 @@
+const API_URL = "http://127.0.0.1:5000";
 const board = document.getElementById("board");
 
 let puzzle;
@@ -29,9 +30,7 @@ document.querySelectorAll(".diff-btn").forEach(function (btn) {
 });
 
 async function loadPuzzle() {
-    const response = await fetch(
-        "http://127.0.0.1:5000/api/puzzle?difficulty=" + difficulty
-    );
+    const response = await fetch(API_URL + "/api/puzzle?difficulty=" + difficulty);
     const data = await response.json();
 
     puzzle = data.puzzle;
