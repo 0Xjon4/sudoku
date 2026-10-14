@@ -1,0 +1,98 @@
+body {
+    background-color: #0b1026;
+    color: #e8ecff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+}
+
+.cell {
+    aspect-ratio: 1;
+    background-color: #1a2245;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.given {
+    color: #ffd86b;
+    font-weight: bold;
+}
+
+.border-right {
+    margin-right: 6px;
+}
+
+.border-bottom {
+    margin-bottom: 6px;
+}
+
+.selected {
+    background-color: #3a4a8f;
+}
+    margin-bottom: 6px;
+}
+.cell {
+    color: #8fd3ff;
+}
+.wrong {
+    color: #ff6b6b;
+}
+.hidden {
+    display: none;
+}
+
+#play-btn {
+    margin-top: 20px;
+    padding: 12px 40px;
+    font-size: 1.2rem;
+    background-color: #3a4a8f;
+    color: #e8ecff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#new-game-btn {
+    margin: 10px 0 20px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    background-color: #3a4a8f;
+    color: #e8ecff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#new-game-btn:hover {
+    background-color: #5565b0;
+}
+.difficulty {
+    margin-top: 20px;
+}
+
+.diff-btn {
+    padding: 8px 18px;
+    margin: 0 4px;
+    background-color: #1a2245;
+    color: #e8ecff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.selected-diff {
+    border-color: #ffd86b;
+}
